@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans antialiased bg-neutral darktext">
+    <nav class="bg-[#FFFBEA] p-4 shadow-md sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo Brand -->
+        <a
+          href="#home"
+          class="text-2xl font-bold text-[#f8c167] flex items-center"
+        >
+          <!-- Jika ada logo gambar, bisa pakai <img> tag di sini -->
+          <img
+            src="./src/img/logo.jpg"
+            alt="Mango Sago Logo"
+            class="h-10 w-10 mr-2 rounded-full"
+          />
+          Mango Sago
+        </a>
+
+        <!-- Navigasi Utama (Desktop) -->
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >About Us</a
+          >
+          <a
+            href="#products"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >Products</a
+          >
+          <a
+            href="#how-to-order"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >How to Order</a
+          >
+        </div>
+
+        <!-- Tombol CTA (Desktop) -->
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/+6281281433101"
+            target="_blank"
+            class="bg-[#f8c167] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#D08933] transition-colors duration-300 shadow-md"
+          >
+            Pesan via WhatsApp
+          </a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-[#f8c167] focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-4 6h4"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#f8c167] rounded-lg py-2 mt-2"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >About Us</a
+        >
+        <a
+          href="#products"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >Products</a
+        >
+        <a
+          href="#how-to-order"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >How to Order</a
+        >
+        <a
+          href="https://wa.me/nomorwhatsappanda"
+          target="_blank"
+          class="block text-center bg-[#f8c167] text-white font-semibold py-2 px-4 mx-4 mt-2 rounded-full hover:bg-accent transition-colors duration-300 shadow-md"
+        >
+          Pesan via WhatsApp
+        </a>
+      </div>
+    </nav>
+
+    <!-- Section Home -->
+    <section
+      id="home"
+      class="relative bg-[#f8c167] min-h-screen flex items-center justify-center py-16 px-4 md:px-0 overflow-hidden rounded-b-4xl"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-16 max-w-6xl"
+      >
+        <div class="flex-1 text-center md:text-left z-10 p-4">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+          >
+            Kesegaran Tropis dalam Setiap Gelas: <br class="hidden md:block" />
+            Mango Sago!
+          </h1>
+          <p
+            class="text-lg md:text-xl text-neutral mb-8 max-w-xl mx-auto md:mx-0"
+          >
+            Perpaduan sempurna mangga segar, mutiara kenyal, nata de coco, dan
+            creamy milk yang bikin ketagihan.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="https://wa.me/6281281433101"
+              target="_blank"
+              class="bg-[#FFD700] text-[#333333] font-semibold py-2 px-4 rounded-full hover:bg-[#FFFBEA] hover:text-[#f8c167] transition-all duration-300 shadow-md text-md"
+            >
+              Pesan Sekarang via WhatsApp
+            </a>
+            <a
+              href="#how-to-order"
+              class="hover:bg-[#FFD700] hover:text-[#333333] text-[#f8c167] font-semibold py-2 px-4 rounded-full bg-[#FFFBEA] transition-all duration-300 shadow-md text-md"
+            >
+              Lihat Jadwal PO & Cara Pesan
+            </a>
+          </div>
+          <p class="text-sm text-[#FFFBEA] mt-6 opacity-80">
+            Sistem Pre-Order: Ikuti
+            <a
+              href="https://www.instagram.com/sweetie.mago/"
+              target="_blank"
+              class="underline hover:text-white hover:font-semibold"
+              >Instagram</a
+            >
+            kami untuk update terbaru!
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div
+          class="flex-1 flex justify-center items-center relative z-10 w-full md:w-auto"
+        >
+          <img
+            src="./src/img/profile.png"
+            alt="Mango Sago Product"
+            class="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain animate-[float_3s_ease-in-out_infinite]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section About Us -->
+    <section id="about" class="bg-[#FFFBEA] py-20 px-6 md:px-12 lg:px-20">
+      <div class="container mx-auto max-w-6xl">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Gambar -->
+          <div class="md:w-1/2 w-full flex justify-center order-2 md:order-1">
+            <img
+              src="./src/img/about-us.jpg"
+              alt="Tentang Kami"
+              class="rounded-4xl shadow-lg max-w-full h-auto object-cover max-h-[450px]"
+            />
+          </div>
+
+          <!-- Teks -->
+          <div
+            class="md:w-1/2 w-full text-center md:text-left order-1 md:order-2"
+          >
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-[#f8c167]">
+              Tentang Kami
+            </h2>
+            <div class="w-24 h-1 bg-[#f8c167] mx-auto mb-12 rounded-full"></div>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-8">
+              Kami menghadirkan kesegaran dalam setiap racikan dengan
+              menggabungkan bahan alami dan sentuhan modern. Setiap produk
+              dibuat dengan perhatian penuh untuk memberikan cita rasa terbaik
+              bagi Anda.
+            </p>
+
+            <a
+              href="#products"
+              class="inline-block bg-[#f8c167] text-[#FFFBEA] font-semibold py-3 px-8 rounded-full hover:bg-[#D08933] transition-all duration-300 shadow-md text-lg"
+            >
+              Lihat Produk Kami
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Products -->
+    <section id="products" class="bg-[#FFFBEA] py-20 px-6 md:px-12 lg:px-20">
+      <div class="container mx-auto max-w-6xl">
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-[#f8c167] text-center mb-12"
+        >
+          Produk Kami
+        </h2>
+
+        <!-- Layout utama -->
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Gambar Produk Utama -->
+          <div class="md:w-1/2 w-full flex justify-center">
+            <img
+              src="./public/images/mango-sago-product.png"
+              alt="Mango Sago"
+              class="rounded-2xl shadow-lg max-w-sm md:max-w-md animate-float"
+            />
+          </div>
+
+          <!-- Deskripsi Produk -->
+          <div class="md:w-1/2 w-full text-center md:text-left">
+            <h3 class="text-3xl font-bold text-[#333333] mb-4">
+              Mango Sago Signature
+            </h3>
+            <p
+              class="text-lg md:text-xl text-[#555555] mb-6 leading-relaxed text-justify"
+            >
+              Kesegaran tropis dalam setiap tegukan. Perpaduan mangga segar,
+              sago, dan susu creamy yang menciptakan sensasi manis dan lembut
+              yang tak terlupakan.
+            </p>
+
+            <!-- Varian Ukuran -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+              <!-- Ukuran 300ml -->
+              <div
+                class="bg-white border border-[#f8c167]/50 rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-2 relative group"
+              >
+                <!-- Label ukuran -->
+                <span
+                  class="absolute top-4 right-4 bg-[#f8c167] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-md"
+                >
+                  300ml
+                </span>
+
+                <!-- Gambar varian -->
+                <img
+                  src="./public/images/mango-sago-300ml.png"
+                  alt="Mango Sago 300ml"
+                  class="rounded-lg w-full h-56 object-cover mb-4 group-hover:scale-105 transition-transform duration-500"
+                />
+
+                <h4 class="text-xl font-semibold text-[#333333] mb-2">
+                  Mango Sago Mini Cup
+                </h4>
+                <p class="text-[#D08933] font-bold text-lg mb-4">Rp10.000</p>
+                <a
+                  href="https://wa.me/+6281281433101?text=Halo%20kak,%20saya%20ingin%20pesan%20Mango%20Sago%20ukuran%20300ml."
+                  target="_blank"
+                  class="inline-block bg-[#f8c167] text-white font-medium py-2 px-6 rounded-full hover:bg-[#D08933] transition-all duration-300"
+                >
+                  Pesan Sekarang
+                </a>
+              </div>
+
+              <!-- Ukuran 500ml -->
+              <div
+                class="bg-white border border-[#f8c167]/50 rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-2 relative group"
+              >
+                <!-- Label ukuran -->
+                <span
+                  class="absolute top-4 right-4 bg-[#f8c167] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-md"
+                >
+                  500ml
+                </span>
+
+                <!-- Gambar varian -->
+                <img
+                  src="./public/images/mango-sago-500ml.png"
+                  alt="Mango Sago 500ml"
+                  class="rounded-lg w-full h-56 object-cover mb-4 group-hover:scale-105 transition-transform duration-500"
+                />
+
+                <h4 class="text-xl font-semibold text-[#333333] mb-2">
+                  Mango Sago Big Cup
+                </h4>
+                <p class="text-[#D08933] font-bold text-lg mb-4">Rp18.000</p>
+                <a
+                  href="https://wa.me/6281281433101?text=Halo%20kak,%20saya%20ingin%20pesan%20Mango%20Sago%20ukuran%20500ml."
+                  target="_blank"
+                  class="inline-block bg-[#f8c167] text-white font-medium py-2 px-6 rounded-full hover:bg-[#D08933] transition-all duration-300"
+                >
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+
+            <!-- CTA Umum -->
+            <a
+              href="#contact"
+              class="inline-block bg-[#f8c167] text-white font-bold py-3 px-10 rounded-full hover:bg-[#D08933] transition-all duration-300 shadow-lg"
+            >
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Animasi -->
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
