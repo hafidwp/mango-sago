@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="font-sans antialiased bg-neutral darktext">
-    <nav class="bg-[#FFFBEA] p-4 shadow-md sticky top-0 z-50">
+  <body class="font-sans antialiased">
+    <nav
+      class="bg-[#FFFBEA] p-4 shadow-md sticky top-0 z-50"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="container mx-auto flex justify-between items-center">
         <!-- Logo Brand -->
         <a
@@ -107,7 +112,7 @@
           >How to Order</a
         >
         <a
-          href="https://wa.me/nomorwhatsappanda"
+          href="https://wa.me/+6281281433101"
           target="_blank"
           class="block text-center bg-[#f8c167] text-white font-semibold py-2 px-4 mx-4 mt-2 rounded-full hover:bg-accent transition-colors duration-300 shadow-md"
         >
@@ -120,6 +125,8 @@
     <section
       id="home"
       class="relative bg-[#f8c167] min-h-screen flex items-center justify-center py-16 px-4 md:px-0 overflow-hidden rounded-b-4xl"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       <div
         class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-16 max-w-6xl"
@@ -180,11 +187,18 @@
     </section>
 
     <!-- Section About Us -->
-    <section id="about" class="bg-[#FFFBEA] py-20 px-6 md:px-12 lg:px-20">
+    <section
+      id="about"
+      class="bg-[#FFFBEA] py-20 px-6 md:px-12 lg:px-20 scroll-mt-10"
+    >
       <div class="container mx-auto max-w-6xl">
         <div class="flex flex-col md:flex-row items-center gap-12">
           <!-- Gambar -->
-          <div class="md:w-1/2 w-full flex justify-center order-2 md:order-1">
+          <div
+            class="md:w-1/2 w-full flex justify-center order-2 md:order-1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img
               src="./src/img/about-us.jpg"
               alt="Tentang Kami"
@@ -195,6 +209,8 @@
           <!-- Teks -->
           <div
             class="md:w-1/2 w-full text-center md:text-left order-1 md:order-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
           >
             <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-[#f8c167]">
               Tentang Kami
@@ -230,19 +246,21 @@
         <!-- Layout utama -->
         <div class="flex flex-col md:flex-row items-center gap-12">
           <!-- Gambar Produk Utama -->
-          <div class="md:w-1/2 w-full flex justify-center">
+          <div
+            class="md:w-1/2 w-full flex justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img
-              src="./public/images/mango-sago-product.png"
+              src="./src/img/product.png"
               alt="Mango Sago"
-              class="rounded-2xl shadow-lg max-w-sm md:max-w-md animate-float"
+              class="rounded-4xl shadow-lg max-w-sm md:max-w-md animate-float"
             />
           </div>
 
           <!-- Deskripsi Produk -->
           <div class="md:w-1/2 w-full text-center md:text-left">
-            <h3 class="text-3xl font-bold text-[#333333] mb-4">
-              Mango Sago Signature
-            </h3>
+            <h3 class="text-3xl font-bold text-[#333333] mb-4">Mango Sago</h3>
             <p
               class="text-lg md:text-xl text-[#555555] mb-6 leading-relaxed text-justify"
             >
@@ -252,7 +270,11 @@
             </p>
 
             <!-- Varian Ukuran -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <!-- Ukuran 300ml -->
               <div
                 class="bg-white border border-[#f8c167]/50 rounded-xl p-6 shadow-md hover:shadow-xl transition-transform duration-500 hover:-translate-y-2 relative group"
@@ -266,7 +288,7 @@
 
                 <!-- Gambar varian -->
                 <img
-                  src="./public/images/mango-sago-300ml.png"
+                  src="./src/img/300ml.png"
                   alt="Mango Sago 300ml"
                   class="rounded-lg w-full h-56 object-cover mb-4 group-hover:scale-105 transition-transform duration-500"
                 />
@@ -297,7 +319,7 @@
 
                 <!-- Gambar varian -->
                 <img
-                  src="./public/images/mango-sago-500ml.png"
+                  src="./src/img/500ml.png"
                   alt="Mango Sago 500ml"
                   class="rounded-lg w-full h-56 object-cover mb-4 group-hover:scale-105 transition-transform duration-500"
                 />
@@ -320,6 +342,8 @@
             <a
               href="#contact"
               class="inline-block bg-[#f8c167] text-white font-bold py-3 px-10 rounded-full hover:bg-[#D08933] transition-all duration-300 shadow-lg"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               Pesan Sekarang
             </a>
@@ -327,6 +351,206 @@
         </div>
       </div>
     </section>
+
+    <!-- Section how-to-order -->
+    <section
+      id="how-to-order"
+      class="bg-[#f8c167] py-20 px-6 md:px-12 lg:px-20 rounded-t-4xl"
+    >
+      <div class="container mx-auto max-w-6xl text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-[#FFFBEA] mb-16">
+          Cara Pemesanan
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <!-- Step 1 -->
+          <div
+            class="relative bg-white rounded-2xl shadow-md p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+          >
+            <span
+              class="absolute text-[70px] md:text-[90px] font-extrabold text-[#f8c167]/10 top-3 right-6 select-none"
+              >1</span
+            >
+            <div
+              class="bg-[#f8c167]/20 text-[#f8c167] p-6 rounded-full mb-6 transition-transform duration-300 hover:scale-110"
+            >
+              <i class="fa-solid fa-bottle-water text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">
+              Pilih Ukuran Favorit
+            </h3>
+            <p class="text-base text-[#333333] leading-relaxed">
+              Tentukan ukuran Mango Sago yang kamu inginkan - 300 ml atau 500
+              ml.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="relative bg-[#FFE9B1] rounded-2xl shadow-md p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+          >
+            <span
+              class="absolute text-[70px] md:text-[90px] font-extrabold text-[#f8c167]/20 top-3 right-6 select-none"
+              >2</span
+            >
+            <div
+              class="bg-[#f8c167]/20 text-[#f8c167] p-6 rounded-full mb-6 transition-transform duration-300 hover:scale-110"
+            >
+              <i class="fa-brands fa-whatsapp text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">Hubungi Kami</h3>
+            <p class="text-base text-[#333333] leading-relaxed">
+              Klik tombol WhatsApp di bawah produk untuk mengirim pesanan
+              otomatis.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="relative bg-white rounded-2xl shadow-md p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+          >
+            <span
+              class="absolute text-[70px] md:text-[90px] font-extrabold text-[#f8c167]/10 top-3 right-6 select-none"
+              >3</span
+            >
+            <div
+              class="bg-[#f8c167]/20 text-[#f8c167] p-6 rounded-full mb-6 transition-transform duration-300 hover:scale-110"
+            >
+              <i class="fa-solid fa-money-bill-wave text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">
+              Lakukan Pembayaran
+            </h3>
+            <p class="text-base text-[#333333] leading-relaxed">
+              Selesaikan pembayaran sesuai instruksi yang dikirim melalui
+              WhatsApp.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            class="relative bg-[#FFE9B1] rounded-2xl shadow-md p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+          >
+            <span
+              class="absolute text-[70px] md:text-[90px] font-extrabold text-[#f8c167]/20 top-3 right-6 select-none"
+              >4</span
+            >
+            <div
+              class="bg-[#f8c167]/20 text-[#f8c167] p-6 rounded-full mb-6 transition-transform duration-300 hover:scale-110"
+            >
+              <i class="fa-solid fa-ice-cream text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">
+              Nikmati Kesegarannya!
+            </h3>
+            <p class="text-base text-[#333333] leading-relaxed">
+              Pesananmu siap dinikmati - rasakan sensasi segar Mango Sago yang
+              unik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#FFFBEA] pt-16 pb-8 px-8 md:px-20 border-t-2 border-[#D08933]"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+      >
+        <!-- BRAND -->
+        <div class="col-span-1 md:col-span-1">
+          <h3 class="text-2xl font-extrabold text-[#f8c167] mb-3">
+            Mango Sago
+          </h3>
+          <p class="text-[#333333] leading-relaxed text-sm">
+            Kesegaran buah mangga berpadu dengan krim lembut. Nikmati setiap
+            tegukan yang menyegarkan hari Anda.
+          </p>
+        </div>
+
+        <!-- PRODUK -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Produk</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <a href="#products" class="hover:text-[#f8c167]"
+                >Mango Sago 300ml</a
+              >
+            </li>
+            <li>
+              <a href="#products" class="hover:text-[#f8c167]"
+                >Mango Sago 500ml</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- BANTUAN -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Bantuan</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <a href="#how-to-order" class="hover:text-[#f8c167]"
+                >Cara Pemesanan</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-[#f8c167]"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- KONTAK -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Kontak</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <i class="fa-brands fa-whatsapp mr-2 text-[#f8c167]"></i>
+              <a
+                href="https://wa.me/+6281281433101"
+                target="_blank"
+                class="hover:text-[#f8c167]"
+                >+62 812-8143-3101</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram mr-2 text-[#f8c167]"></i>
+              <a
+                href="https://www.instagram.com/sweetie.mago/"
+                target="_blank"
+                class="hover:text-[#f8c167]"
+                >@sweetie.mago</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot mr-2 text-[#f8c167]"></i>
+              <span>Bekasi, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div
+        class="border-t border-[#f8c167]/30 pt-6 text-center text-sm text-[#555555]"
+      >
+        <p>© 2025 Mango Sago. All Rights Reserved.</p>
+        <p class="mt-1 text-[#888888]">
+          Crafted with 🍋 by
+          <span class="font-semibold text-[#f8c167]">Jule</span>
+        </p>
+      </div>
+    </footer>
 
     <!-- Custom Animasi -->
     <style>
@@ -345,12 +569,20 @@
       }
     </style>
 
+    <script
+      src="https://kit.fontawesome.com/a162930bfb.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       document
         .getElementById("mobile-menu-button")
         .addEventListener("click", function () {
           document.getElementById("mobile-menu").classList.toggle("hidden");
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

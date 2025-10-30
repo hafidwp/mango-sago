@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans antialiased">
+    <nav
+      class="bg-[#FFFBEA] p-4 shadow-md sticky top-0 z-50"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo Brand -->
+        <a
+          href="#home"
+          class="text-2xl font-bold text-[#f8c167] flex items-center"
+        >
+          <!-- Jika ada logo gambar, bisa pakai <img> tag di sini -->
+          <img
+            src="./src/img/logo.jpg"
+            alt="Mango Sago Logo"
+            class="h-10 w-10 mr-2 rounded-full"
+          />
+          Mango Sago
+        </a>
+
+        <!-- Navigasi Utama (Desktop) -->
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >About Us</a
+          >
+          <a
+            href="#products"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >Products</a
+          >
+          <a
+            href="#how-to-order"
+            class="text-[#333333] hover:text-[#f8c167] transition-colors duration-300 font-semibold"
+            >How to Order</a
+          >
+        </div>
+
+        <!-- Tombol CTA (Desktop) -->
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/+6281281433101"
+            target="_blank"
+            class="bg-[#f8c167] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#D08933] transition-colors duration-300 shadow-md"
+          >
+            Pesan via WhatsApp
+          </a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-[#f8c167] focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-4 6h4"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#f8c167] rounded-lg py-2 mt-2"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >About Us</a
+        >
+        <a
+          href="#products"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >Products</a
+        >
+        <a
+          href="#how-to-order"
+          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          >How to Order</a
+        >
+        <a
+          href="https://wa.me/+6281281433101"
+          target="_blank"
+          class="block text-center bg-[#f8c167] text-white font-semibold py-2 px-4 mx-4 mt-2 rounded-full hover:bg-accent transition-colors duration-300 shadow-md"
+        >
+          Pesan via WhatsApp
+        </a>
+      </div>
+    </nav>
+    <section id="contact" class="bg-[#FFFBEA] py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold text-[#f8c167] mb-4">
+          Hubungi Kami
+        </h2>
+        <p class="text-[#333333] mb-12 text-base md:text-lg">
+          Kami siap melayani pesanan dan pertanyaanmu! Silakan pilih cara yang
+          paling mudah untuk terhubung dengan kami.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- WhatsApp -->
+          <div
+            class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="bg-[#f8c167]/20 p-4 rounded-full mb-4">
+                <i class="fa-brands fa-whatsapp text-[#25D366] text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-[#333333] mb-2">WhatsApp</h3>
+              <p class="text-[#555555] mb-4">
+                Langsung chat dengan kami untuk pemesanan cepat.
+              </p>
+              <a
+                href="https://wa.me/+6281281433101?text=Halo%20kak%2C%20saya%20ingin%20pesan%20Mango%20Sago%20😊"
+                target="_blank"
+                class="bg-[#f8c167] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#d89a38] transition-all"
+              >
+                Chat Sekarang
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div
+            class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="bg-[#f8c167]/20 p-4 rounded-full mb-4">
+                <i class="fa-brands fa-instagram text-[#E4405F] text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-[#333333] mb-2">Instagram</h3>
+              <p class="text-[#555555] mb-4">
+                Ikuti kami untuk promo dan info terbaru Mango Sago.
+              </p>
+              <a
+                href="https://instagram.com/sweetie.mago"
+                target="_blank"
+                class="bg-[#f8c167] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#d89a38] transition-all"
+              >
+                Kunjungi IG Kami
+              </a>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div
+            class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="bg-[#f8c167]/20 p-4 rounded-full mb-4">
+                <i class="fa-solid fa-location-dot text-[#f8c167] text-3xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-[#333333] mb-2">Lokasi Kami</h3>
+              <p class="text-[#555555] mb-4">
+                Bulak Kapal, Bekasi (Pre-Order via WhatsApp).
+              </p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="bg-[#f8c167] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#d89a38] transition-all"
+              >
+                Lihat di Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#FFFBEA] pt-16 pb-8 px-8 md:px-20 border-t-2 border-[#D08933]"
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
+        <!-- BRAND -->
+        <div class="col-span-1 md:col-span-1">
+          <h3 class="text-2xl font-extrabold text-[#f8c167] mb-3">
+            Mango Sago
+          </h3>
+          <p class="text-[#333333] leading-relaxed text-sm">
+            Kesegaran buah mangga berpadu dengan krim lembut. Nikmati setiap
+            tegukan yang menyegarkan hari Anda.
+          </p>
+        </div>
+
+        <!-- PRODUK -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Produk</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <a href="#products" class="hover:text-[#f8c167]"
+                >Mango Sago 300ml</a
+              >
+            </li>
+            <li>
+              <a href="#products" class="hover:text-[#f8c167]"
+                >Mango Sago 500ml</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- BANTUAN -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Bantuan</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <a href="#how-to-order" class="hover:text-[#f8c167]"
+                >Cara Pemesanan</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-[#f8c167]">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- KONTAK -->
+        <div>
+          <h4 class="text-lg font-semibold text-[#333333] mb-4">Kontak</h4>
+          <ul class="space-y-2 text-sm text-[#555555]">
+            <li>
+              <i class="fa-brands fa-whatsapp mr-2 text-[#f8c167]"></i>
+              <a
+                href="https://wa.me/+6281281433101"
+                target="_blank"
+                class="hover:text-[#f8c167]"
+                >+62 812-8143-3101</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram mr-2 text-[#f8c167]"></i>
+              <a
+                href="https://www.instagram.com/sweetie.mago/"
+                target="_blank"
+                class="hover:text-[#f8c167]"
+                >@sweetie.mago</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot mr-2 text-[#f8c167]"></i>
+              <span>Bekasi, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div
+        class="border-t border-[#f8c167]/30 pt-6 text-center text-sm text-[#555555]"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
+        <p>© 2025 Mango Sago. All Rights Reserved.</p>
+        <p class="mt-1 text-[#888888]">
+          Crafted with 🍋 by
+          <span class="font-semibold text-[#f8c167]">Jule</span>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/a162930bfb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
