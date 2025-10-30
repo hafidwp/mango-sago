@@ -89,26 +89,26 @@
       <!-- Mobile Menu Dropdown -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-[#f8c167] rounded-lg py-2 mt-2"
+        class="hidden md:hidden bg-[#f8c167] rounded-lg py-2 mt-2 opacity-0 scale-y-95 transition-all duration-300 ease-in-out origin-top"
       >
         <a
-          href="#home"
-          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          href="index.html#home"
+          class="block px-5 py-3 text-[#333333] font-semibold rounded-md hover:bg-[#FFFBEA] hover:text-[#D08933] transition-colors duration-300"
           >Home</a
         >
         <a
-          href="#about"
-          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          href="index.html#about"
+          class="block px-5 py-3 text-[#333333] font-semibold rounded-md hover:bg-[#FFFBEA] hover:text-[#D08933] transition-colors duration-300"
           >About Us</a
         >
         <a
-          href="#products"
-          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          href="index.html#products"
+          class="block px-5 py-3 text-[#333333] font-semibold rounded-md hover:bg-[#FFFBEA] hover:text-[#D08933] transition-colors duration-300"
           >Products</a
         >
         <a
-          href="#how-to-order"
-          class="block px-4 py-2 text-[#333333] font-semibold rounded-md"
+          href="index.html#how-to-order"
+          class="block px-5 py-3 text-[#333333] font-semibold rounded-md hover:bg-[#FFFBEA] hover:text-[#D08933] transition-colors duration-300"
           >How to Order</a
         >
         <a
@@ -292,6 +292,42 @@
       </div>
     </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuLinks = mobileMenu.querySelectorAll("a");
+
+        function toggleMenu() {
+          const isHidden = mobileMenu.classList.contains("hidden");
+
+          if (isHidden) {
+            mobileMenu.classList.remove("hidden");
+            setTimeout(() => {
+              mobileMenu.classList.remove("opacity-0", "scale-y-95");
+              mobileMenu.classList.add("opacity-100", "scale-y-100");
+            }, 10);
+          } else {
+            mobileMenu.classList.remove("opacity-100", "scale-y-100");
+            mobileMenu.classList.add("opacity-0", "scale-y-95");
+
+            setTimeout(() => {
+              mobileMenu.classList.add("hidden");
+            }, 200);
+          }
+        }
+
+        menuButton.addEventListener("click", toggleMenu);
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            if (!mobileMenu.classList.contains("hidden")) {
+              toggleMenu();
+            }
+          });
+        });
+      });
+    </script>
     <script
       src="https://kit.fontawesome.com/a162930bfb.js"
       crossorigin="anonymous"
